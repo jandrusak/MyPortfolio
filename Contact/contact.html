@@ -1,19 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-          <a href="./Resume/index.html">Resume</a>
-          <a href="./About/aboutPage.html">About Me</a>
-          <a href="/index.html">My Blog</a>
-          <a href="">Contact Me</a>
-        </nav>
-      </header>
-</body>
+      <nav>
+        <a href="../Resume/index.html">Resume</a>
+        <a href="../About/aboutPage.html">About Me</a>
+        <a href="/index.html">My Blog</a>
+        <a href="./contact.html">Contact Me</a>
+      </nav>
+    </header>
+    <form action="results.html" method="GET" enctype="multipart/form-data">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <textarea name="comments" id="comments" cols="30" rows="10" minlength="20" maxlength="500" ></textarea>
+      </div>
+      <div>
+        How did you hear about me?
+        <div>
+          <label for="Classmate">Classmate</label>
+          <input type="Checkbox" name="Classmate" id="Classmate" />
+        </div>
+        <div>
+          <label for="Resume">Resume Submission</label>
+          <input type="checkbox" name="Resume" id="Resume" />
+        </div>
+
+        <div>
+          <label for="LinkedIn">LinkedIn</label>
+          <input type="checkbox" name="LinkedIn" id="LinkedIn" />
+        </div>
+        <div>
+          <label for="CAR">Coding Academy Rec</label>
+          <input type="checkbox" name="CAR" id="CAR" />
+        </div>
+      </div>
+      <div>
+        Can we contact you? 
+        <div>
+          <label for="Yes">Yes</label>
+          <input type="radio" name="Yes" id="Yes" value="Yes" />
+        </div>
+        <div>
+          <label for="No">No</label>
+          <input type="radio" name="No" id="No" value="No" />
+        </div>
+      </div>
+      <div>
+        <label for="date">Birthday Wishes?</label>
+        <input type="date" name="date" id="date" min="2019-06-10" />
+      </div>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="scripts.js"></script>
+  </body>
 </html>
