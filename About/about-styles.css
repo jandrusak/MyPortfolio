@@ -2,7 +2,6 @@ header {
   display: grid;
   grid-template-columns: 100% 0%;
   width: 100%;
-
 }
 
 .has-border {
@@ -31,17 +30,16 @@ nav {
 
 img {
   width: 25%;
-  border: 5px ;
+  border: 5px;
   padding: 2px;
   border-radius: 1%;
   margin-left: 120px;
- 
 }
 
-body {
-display: grid;
-grid-template-columns: 100%;
-grid-template-rows: 15% 90%;
+.bio {
+  display: grid;
+  grid-template-columns: 100%;
+  /* grid-template-rows: 10% 90%; */
 }
 
 .bio-container {
@@ -49,7 +47,6 @@ grid-template-rows: 15% 90%;
   flex-direction: row;
   align-items: center;
   margin-right: 100px;
-  
 }
 
 .experiences-container {
@@ -64,57 +61,26 @@ grid-template-rows: 15% 90%;
 .description {
   font-size: 25px;
   text-align: center;
-padding-left: 75px;
-line-height: 35px;
+  padding-left: 75px;
+  line-height: 35px;
 }
 
-@media (max-width: 576px) { 
-   main {
-    background-color: rgb(13, 194, 255);
-   }
-    
-}
+@media (max-width: 470px) {
+  body {
+    background-color: rgb(189, 203, 207);
+  }
 
-header {
-  display: grid;
-  grid-template-columns: 100%;
-  width: 100%;
-}
+  img {
+    width: 250px;
+  }
 
-img {
-  width: 100%;
-}
+  .description {
+    font-size: medium;
+    line-height: 22px;
+  }
 
-.bio-container {
-  background-color: white;
-  color:rgb(25, 25, 25);
-  flex-direction: column;
-  margin-top: 5%;
-}
-section {
-width: 25%;
-}
-h3 {
-margin: top 10px;
-margin-bottom: 0px;
-}
-
-body {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows:2%;
-}
-
-.description {
-  font-size: 25px;
-  text-align: center;
-padding-left: 75px;
-line-height: 35px;
-width: 100%;
-
-}
-
-.experiences-container {
-width: 500px;
-
+  .bio-container {
+    flex-direction: column;
+    margin-right: 0px;
+  }
 }
