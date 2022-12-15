@@ -5,9 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css" />
+    <title>Shooting Star Animation</title>
   </head>
   <body>
+    <div class="sky">
+        <!-- We are making divisions, every div.
+        represent a single roundabout balls -->
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
     <header>
       <div class="nav" id="nav">
         <a href="javascript:void(0)" class="close nav_link" onclick="closeNav()">&times;</a>
@@ -16,19 +29,20 @@
         <a href="https://medium.com/@jonathanandrusak">Blog</a>
         <a href="./Contact/contact.html">Contact</a>
       </div>
-      <span id="open" class="open" onclick="openNav()"> &#9776 Menu</span>
-
+      <span id="open" class="open" onclick="openNav()"> &#9776</span>
+      <h3>Navagation</h3>
+      <i class="fa fa-phone fa-2x"></i>
     </header>
     <main>
-      <img class="skyfall" src="no_background.png" id="background" alt="background photo of me" />
-    </main>
-    <img
-    src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"
-    class="logo"
-    alt="austin coding academy logo"
-  />
+      <section class="background_photo">
+        <img class="skyfall" src="no_background.png" id="background" alt="background photo of me" />
+      </section>
+      <!-- <section class="heading">
+        <h1>Landing in the Tech World</h1>
+      </section> -->
+    </main>  
   <footer>
-    <p>© 2023 by Mustacchio. All rights reserved.</p>
+    <!-- <p>© 2023 by Jonathan. All rights reserved.</p> -->
   </footer>
   <script>
     function openNav () {

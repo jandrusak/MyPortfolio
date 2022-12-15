@@ -1,40 +1,52 @@
-/* body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-image: url("https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg");
+  
+  body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: rgba(0, 0, 0, 0.962);
+  background-image: url(skyphoto1.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: 100% 100%;
+  background-size:cover;
+  overflow: hidden;
+  min-height: 1500px;
+  opacity: 0.8;
 
-.logo {
-  width: 150px;
-  height: 100px;
-  margin: 3% 10%;
+  
 }
 
 header {
-  /* display: grid;
-  grid-template-columns: 40% 60%;  */
-  width: 100%;
+  background-color:  rgba(213, 211, 211, 0.19);
+  width: 100%;  
+  display: flex;
+  max-width: 100%;
 }
 
-main {
-  height: auto;
+.fa.fa-phone.fa-2x {
+  margin: .45em .25em 0em 0em;
+  /* margin-top: 6px;
+  margin-right: 8px;   */
+  color: white;
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
   width: 100%;
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
+  color: white;
+
 }
 
 .open {
-  /* display: flex; */
+  display: flex;
   flex-wrap: wrap;
-  color: rgb(123, 6, 104);
+  /* color: rgb(0, 0, 0); */;
   font-size: 38px;
-  float: center;
-  margin: 1em 0 1em 1em;
-  display: block;
+  margin: 0em 0 1em .15em;
+  /* display: none; */
   cursor: pointer;
   text-align: left;
-
+  margin-bottom: 0px;  
+  color: white;
+  
 }
 
 .has-border {
@@ -48,53 +60,83 @@ main {
 .nav > a {
   font-family: Arial, Helvetica, sans-serif;
   background: transparent;
-  padding: 10px;
-  text-align: center;
+  padding: 5px;
+  text-align: left;
   text-decoration: none;
   text-transform: bolder;
-  color: rgb(92, 3, 74);
-
+  color: rgb(255, 255, 255);
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
   overflow-x: visible;
-  height: 35vh;
+  height: 12vh;
   z-index:1;
   position: fixed;
-  background-color: rgba(255, 227, 255, 0.8);
+  background-color: rgba(70, 0, 78, 0.668);
   transition: 0.5s;
-  display: block;
-  font-size: 40px;
-  padding: 1em 0;
+  /* display: block; */
+  font-size: 17px;
+  /* padding-left: 1em; */
+  padding-bottom: 1em;
+  padding-top: 3.5em;
+  /* padding-right: .5em; */
+  /* margin-right: .5px; */
   transform: 0.3s;
   clear: left;
   overflow: hidden;
-  display: flex;
   flex-direction: column;
 
 }
+
+.background_photo {
+  min-height: 100%;
+  min-width: 650px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-size:cover;
+  overflow: hidden;
+}
+
+.title {
+  
+}
+
 /* This is an ID selector */
 .skyfall {
-  background-image: ;
-  border-radius: 20%;
-  /* margin: 15% auto; */
-  /* grid-column: 2/3; */
-    filter: grayscale(15%);
-    object-fit: contain;
-    display: flex;
-    flex-direction: column;
-    background-size: cover;
+    /* height: 100%; */
+    /* width: 100%; */
+    /* filter: grayscale(30%); */
+    /* object-fit: contain; */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+    /* flex-direction: column; */
+    /* background-size: cover; */
+    /* type in height and width to match sky background */
+}
 
-    /* overflow: hidden; */
+.top-container {
+display: flex;
+flex-direction: row;
+text-transform: capitalize;
+font-weight: bolder;
+
 }
 
 h1 {
-  color: rgb(198, 25, 25);
-  grid-column: 2/3;
-  margin: 3% auto;
-  border-bottom: 2px solid #0443f1;
+  padding-left: 50px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
 }
 
 h2 {
@@ -110,7 +152,7 @@ h2 {
   margin: 3% auto;
 }
 
-button {
+/* button {
   grid-column: 2/3;
   margin: 3% auto;
   width: 70%;
@@ -125,7 +167,7 @@ button {
   color: rgb(214, 25, 25);
   letter-spacing: 16px;
   font-style: italic;
-} */
+} */ */
 
 
 .nav_link {
@@ -140,10 +182,294 @@ button {
 
 .close {
   float: inline-start;
-  /* this is to move the X */ */
-  margin: 1em 0 0 1em; 
 }
 
 .nav a:not(:first-child):hover {
-  background-color: rgb(85, 85, 94);
+  background-color: rgb(234, 234, 234);
+}
+
+.logo {
+  width: 100px;
+  height: 90px;
+  color: rgb(230, 207, 226);
+}
+
+footer {
+display: grid;
+grid-template-columns: 75% 55%;
+color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* Here using -webkit, we make angle
+  of 45 degree of falling star */
+  .sky {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  }
+  
+  /* Here we are making roundabout balls */
+  .star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 2px;
+  border-radius: 885px;
+  background: linear-gradient(-45deg,
+    #eef0f5, rgba(0, 0, 255, 0));
+  
+  -webkit-filter: drop-shadow(0 0 6px #eef1f8);
+  filter: drop-shadow(0 0 6px #d7dff0);
+  -webkit-animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite;
+  animation: tail 3000ms ease-in-out infinite,
+    shooting 3000ms ease-in-out infinite;
+  }
+  
+  /* Here we add before and after effect to star */
+  .star::before,
+  .star::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(0, 0, 255, 0),
+    #eaeef8,
+    rgba(0, 0, 255, 0)
+  );
+  -webkit-transform: translateX(50%) rotateZ(45deg);
+  transform: translateX(50%) rotateZ(45deg);
+  border-radius: 100%;
+  -webkit-animation: shining 3000ms ease-in-out infinite;
+  animation: shining 3000ms ease-in-out infinite;
+  }
+  .star::after {
+  -webkit-transform: translateX(50%) rotateZ(-45deg);
+  transform: translateX(50%) rotateZ(-45deg);
+  }
+  
+  /* Here we are adding location of each
+  nth-child, animations, delays, and
+  before and after effects to each
+  and every balls(stars) */
+  .star:nth-child(1) {
+  top: calc(50% - 119px);
+  left: calc(50% - 43px);
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+  }
+  .star:nth-child(1)::before,
+  .star:nth-child(1)::after {
+  -webkit-animation-delay: 4000ms;
+  animation-delay: 4000ms;
+  }
+  .star:nth-child(2) {
+  top: calc(50% - -43px);
+  left: calc(50% - 37px);
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+  }
+  .star:nth-child(2)::before,
+  .star:nth-child(2)::after {
+  -webkit-animation-delay: 5000ms;
+  animation-delay: 5000ms;
+  }
+  .star:nth-child(3) {
+  top: calc(50% - -40px);
+  left: calc(50% - 222px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+  }
+  .star:nth-child(3)::before,
+  .star:nth-child(3)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+  }
+  .star:nth-child(4) {
+  top: calc(50% - -29px);
+  left: calc(50% - 113px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+  }
+  .star:nth-child(4)::before,
+  .star:nth-child(4)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+  }
+  .star:nth-child(5) {
+  top: calc(50% - 146px);
+  left: calc(50% - 112px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+  }
+  .star:nth-child(5)::before,
+  .star:nth-child(5)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+  }
+  .star:nth-child(6) {
+  top: calc(50% - -108px);
+  left: calc(50% - 160px);
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+  }
+  .star:nth-child(6)::before,
+  .star:nth-child(6)::after {
+  -webkit-animation-delay: 3000ms;
+  animation-delay: 3000ms;
+  }
+  .star:nth-child(7) {
+  top: calc(50% - 52px);
+  left: calc(50% - 72px);
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+  }
+  .star:nth-child(7)::before,
+  .star:nth-child(7)::after {
+  -webkit-animation-delay: 7000ms;
+  animation-delay: 7000ms;
+  }
+  
+  /* This code will help to generate
+  effect in tail of star */
+  @keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+  }
+  
+  /* This code will generate shining
+  effect in head of star */
+  @keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+  }
+  
+  /* Here we are adding webkit-animation
+  to head of star for shining */
+  @-webkit-keyframes shining {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 30px;
+  }
+  100% {
+    width: 0;
+  }
+  }
+  
+  /* Here we are adding webkit-animation
+  to tail of star */
+  @-webkit-keyframes tail {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 100px;
+  }
+  100% {
+    width: 0;
+  }
+  }
+  
+  /* Here we are adding webkit-animation
+  for shooting effect */
+  @-webkit-keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+  }
+  
+  /* Here we make shooting effect */
+  @keyframes shooting {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(270px);
+    transform: translateX(270px);
+  }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 377px) {
+  .skyfall {
+    /* left: 50%; */
+    /* margin-left: 50px; */
+    height: 100vh;
+    width: 100%;
+    filter: grayscale(30%);
+    object-fit: contain;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-size: cover; */
+    /* type in height and width to match sky background */
+}
+
+
 }
