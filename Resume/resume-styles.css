@@ -28,7 +28,8 @@ h3 {
 
 body {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 35% 65%;
+  align-items: center;
 }
 
 main {
@@ -74,6 +75,7 @@ p {
 aside {
   background-color: #390c53;
   color: white;
+height: 800px;
 }
 
 .corner {
@@ -109,5 +111,27 @@ img {
 }
 
 .contactchildren {
-padding-bo;
+/* width: fit-content;
+width: 100%; */
+}
+
+@media (max-width: 315px) {
+  body { 
+      display: grid;
+      grid-template-columns: 100%;
+      align-items: center;
+  }
+
+  main {
+    color: #390c53;
+    width: 100%;
+    background-color: white;
+    padding-left: 10px;
+  }
+ 
+  aside {
+    background-color: #390c53;
+    color: white;
+  height: 600px;
+  }
 }
