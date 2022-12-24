@@ -4,46 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact-styles.css">
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav>
+      <div class="nav" id="nav">
+        <a href="javascript:void(0)" class="close nav_link" onclick="closeNav()">&times;</a>
         <a href="../Resume/index.html">Resume</a>
-        <a href="../About/aboutPage.html">About Me</a>
-        <a href="/index.html">My Blog</a>
-        <a href="./contact.html">Contact Me</a>
-      </nav>
+        <a href="../About/aboutPage.html">About</a>
+        <a href="../index.html">Home</a>
+        <a href="../Contact/contact.html">Contact</a>
+      </div>
+      <span id="open" class="open" onclick="openNav()"> &#9776</span>
+      <h3 class="menu">Menu</h3>
+      <a href="./Contact/contact.html"><i class="fa fa-phone fa-2x"></i></a>
     </header>
     <form action="results.html" method="GET" enctype="multipart/form-data">
-      <div>
+      <div class="email">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" />
       </div>
-      <div>
+      <div class="comments">
         <textarea name="comments" id="comments" cols="30" rows="10" minlength="20" maxlength="500" ></textarea>
-      </div>
-      <div>
-        How did you hear about me?
-        <div>
-          <label for="Classmate">Classmate</label>
-          <input type="Checkbox" name="Classmate" id="Classmate" />
-        </div>
-        <div>
-          <label for="Resume">Resume Submission</label>
-          <input type="checkbox" name="Resume" id="Resume" />
-        </div>
-
-        <div>
-          <label for="LinkedIn">LinkedIn</label>
-          <input type="checkbox" name="LinkedIn" id="LinkedIn" />
-        </div>
-        <div>
-          <label for="CAR">Coding Academy Rec</label>
-          <input type="checkbox" name="CAR" id="CAR" />
-        </div>
-      </div>
-      <div>
+      <br>
         Can we contact you? 
         <div>
           <label for="Yes">Yes</label>
@@ -54,13 +39,19 @@
           <input type="radio" name="No" id="No" value="No" />
         </div>
       </div>
-      <div>
-        <label for="date">Birthday Wishes?</label>
-        <input type="date" name="date" id="date" min="2019-06-10" />
-      </div>
       <button type="reset">Reset</button>
       <button type="submit">Submit</button>
     </form>
     <script src="scripts.js"></script>
+    <script>
+      function openNav () {
+        document.getElementById("open").style.display = "none";
+        document.getElementById("nav").style.width = "20%";
+      }
+      function closeNav () {
+        document.getElementById("nav").style.width = "0";
+        document.getElementById("open").style.display = "block";
+      }
+    </script>
   </body>
 </html>

@@ -4,17 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="about-styles.css" />
     <title>Document</title>
   </head>
   <body>
     <header>
-      <nav>
+      <div class="nav" id="nav">
+        <a href="javascript:void(0)" class="close nav_link" onclick="closeNav()">&times;</a>
         <a href="../Resume/index.html">Resume</a>
-        <a href="../About/aboutPage.html">About Me</a>
-        <a href="/index.html">My Blog</a>
-        <a href="../Contact/contact.html">Contact Me</a>
-      </nav>
+        <a href="../About/aboutPage.html">About</a>
+        <a href="../index.html">Home</a>
+        <a href="../Contact/contact.html">Contact</a>
+      </div>
+      <span id="open" class="open" onclick="openNav()"> &#9776</span>
+      <h3 class="menu">Menu</h3>
+      <a href="./Contact/contact.html"><i class="fa fa-phone fa-2x"></i></a>
     </header>
     <div class="bio">
       <section class="bio-container">
@@ -23,10 +28,7 @@
           <p class="description">
             Hello, my name is Jonathan Andrusak. Welcome to my page. I am brand
             new to coding, and anything tech related for that matter. I am very
-            interested in building the gap between technology and psychology. I
-            have spent a great deal of time working working with agencies,
-            children, and families. Specifically, with children who have mental
-            health difficulties and with foster-children.
+            interested in building the gap between technology and psychology.
           </p>
         </article>
       </section>
@@ -46,5 +48,15 @@
       </section>
     </div>
     <!-- optional footer here -->
+    <script>
+      function openNav () {
+        document.getElementById("open").style.display = "none";
+        document.getElementById("nav").style.width = "20%";
+      }
+      function closeNav () {
+        document.getElementById("nav").style.width = "0";
+        document.getElementById("open").style.display = "block";
+      }
+    </script>
   </body>
 </html>

@@ -5,49 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="resume-styles.css" />
   </head>
   <body>
+    <header>
+      <div class="nav" id="nav">
+        <a href="javascript:void(0)" class="close nav_link" onclick="closeNav()">&times;</a>
+        <a href="../Resume/index.html">Resume</a>
+        <a href="../About/aboutPage.html">About</a>
+        <a href="../index.html">Home</a>
+        <a href="../Contact/contact.html">Contact</a>
+      </div>
+      <span id="open" class="open" onclick="openNav()"> &#9776</span>
+      <h3 class="menu">Menu</h3>
+      <a href="./Contact/contact.html"><i class="fa fa-phone fa-2x"></i></a>
+    </header>
     <!-- Left side column -->
-    <aside>
-      <section class="corner">
-        <img src="profile.photo.jpg" alt="" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <mobileview>
+      <aside>
+        <img class="pic" src="profile.photo.jpg" alt="" />
         <div class="mobile_name">Jonathan Andrusak</div>
         <h2 class="title">Software Developer</h2>
-      </section>
       <!-- contact info -->
       <section class="contact">
         <p class="contact-info">Contact Info</p>
-        <hr class="solid"> </hr>
+        <hr class="solid"></hr>
         <section class="contactchildren">
-          <p>
-            <!-- phone icon -->
-            <br></br>
-            (785)-577-3106
-          </p>
-          <p>
-            <!-- location icon -->
-            20400 Marketplace Ave. Kyle, TX 78640
-            <br></br>
-          </p>
-          <p>
-            <!-- mail icon -->
-            jonathanandrusak@gmail.com
-            <br></br>
-          </p>
-          <p>
-            <!-- LinkedIn icon -->
-            LinkedIn: #jonathan.andrusak
-            <br></br>
-          </p>
+          <p>(785)-577-3106</p>
+          <p>20400 Marketplace Ave. Kyle, TX 78640</p>
+          <p>jonathanandrusak@gmail.com</p>
+          <p>LinkedIn: #jonathan.andrusak</p>
         </section>
         <section class="mobile_contactchildren">
           <p>(785)-577-3106</p>
-          <!-- location icon -->
           <p>20400 Marketplace Ave. Kyle, TX 78640</p>
-         <!-- mail icon -->
           <p>jonathanandrusak@gmail.com</p>
-          <!-- LinkedIn icon -->
           <p>LinkedIn: #jonathan.andrusak</p>
         </section>
       </section>
@@ -106,5 +116,113 @@
         </ul>
       </section>
     </main>
+    </mobileview>
+
+
+
+
+
+
+
+
+
+
+
+
+    <desktopview>
+    <aside>
+        <img class="pic" src="profile.photo.jpg" alt="" />
+        <div class="mobile_name">Jonathan Andrusak</div>
+        <h2 class="title">Software Developer</h2>
+      <!-- contact info -->
+      <section class="contact">
+        <p class="contact-info">Contact Info</p>
+        <section class="contactchildren">
+          <p class="one">(785)-577-3106</p>
+          <p class="one">20400 Marketplace Ave. Kyle, TX 78640</p>
+          <p class="one">jonathanandrusak@gmail.com</p>
+          <p class="one">LinkedIn: #jonathan.andrusak</p>
+        </section>
+        <section class="mobile_contactchildren">
+          <p>(785)-577-3106</p>
+          <p>20400 Marketplace Ave. Kyle, TX 78640</p>
+          <p>jonathanandrusak@gmail.com</p>
+          <p>LinkedIn: #jonathan.andrusak</p>
+        </section>
+      </section>
+    </aside>
+    <!-- Right side column (main content) -->
+    <main>
+      <section>
+        <!-- title   -->
+        <div class="desktop_name">Jonathan Andrusak</div>
+      </section>
+      <section>
+        <!-- Intro paragraph -->
+        <h3 class="description">
+          I am a software developer and am practicing my skills of web
+          development. I am passionate about coding and learning more to advance/utilize my skillset. In the future, I hope to become a full-time software developer.
+        </h3>
+      </section>
+      <section>
+        <!-- catagory 1 -->
+        <h2 class="uppercase">areas of expertise</h2>
+        <p class="expertise_description">
+          I've worked with various types of projects and have mastered multiple
+          programming languages and coding as well as software testing and
+          debugging.
+        </p>
+      </section>
+      <section>
+        <!-- catagory 2 -->
+        <h2>professional history</h2>
+        <h1>Lead software engineer</h1>
+        <p class="dates">Austin Coding Academy | October 2022 - Present</p>
+        <ul>
+          <li>Manages the company's largest team of software engineers</li>
+          <li>Ensures major projects follow established timeline</li>
+          <li>Communicates team needs to other departments</li>
+        </ul>
+        <h1>Senior software engineer</h1>
+        <ul>
+          <li>Developed and designed information systems for clients</li>
+          <li>Assisted team with various aspects of projects</li>
+          <li>Managed team when team lead was unavailable</li>
+        </ul>
+      </section>
+      <section>
+        <!-- catagory 3 -->
+        <h2>educational history</h2>
+        <h1>Commasbell university</h1>
+        <p class="dates">Ms Software engineering, class of 2006</p>
+        <ul>
+          <li>Graduate with honors</li>
+          <li>Graduate TA for Advanced Programming</li>
+          <li>
+            Worked as Head Student Supervisor at Commasbell University Tech
+            Support Office
+          </li>
+        </ul>
+      </section>
+    </main>
+  </desktopview>
+
+
+
+
+
+
+
+
+    <script>
+      function openNav () {
+        document.getElementById("open").style.display = "none";
+        document.getElementById("nav").style.width = "20%";
+      }
+      function closeNav () {
+        document.getElementById("nav").style.width = "0";
+        document.getElementById("open").style.display = "block";
+      }
+    </script>
   </body>
 </html>

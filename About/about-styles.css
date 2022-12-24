@@ -1,7 +1,97 @@
-header {
-  display: grid;
-  grid-template-columns: 100% 0%;
+body {
+ display: flex;
+ flex-direction: column;
+  height: 100%;
   width: 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgba(0, 0, 0, 0.962);
+  background-image: url(mobile_galaxy.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* overflow: hidden; */
+  opacity: 0.8;
+  min-width: fit-content;
+  padding: 0;
+  margin: 0;
+
+}
+
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.menu {
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+}
+
+.fa.fa-phone.fa-2x {
+  margin: 0.45em 0.25em 0em 0em;
+  /* margin-top: 6px;
+  margin-right: 8px;   */
+  color: rgb(255, 255, 255);
+}
+
+.open {
+  display: flex;
+  flex-wrap: wrap;
+  /* color: rgb(0, 0, 0); */
+  font-size: 38px;
+  margin: 0 0 1em 0.15em;
+  /* display: none; */
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  width:fit-content;
+
+}
+
+/* This is an element within and element selector */
+.nav > a {
+  font-family: Arial, Helvetica, sans-serif;
+  background: transparent;
+  padding: 5px;
+  text-align: left;
+  text-decoration: none;
+  text-transform: bolder;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+}
+
+.nav {
+  display: flex;
+  /* justify-content: flex-end; */
+  /* overflow-x: visible; */
+  height: 40vh;
+  width: 0%;
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(70, 0, 78, 0.668);
+  transition: 0.5s;
+  /* display: block; */
+  font-size: 17px;
+  /* padding-left: 1em; */
+  padding-bottom: 3em;
+  padding-top: 0.5em;
+  transform: 0.3s;
+  clear: left;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .has-border {
@@ -9,23 +99,6 @@ header {
   border: 2px solid #0795c3;
   background: none;
   padding: 20px;
-}
-
-nav > a {
-  margin: 2% 1% 3%;
-  width: 100%;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  background: transparent;
-  text-align: center;
-  border: 2px solid white;
-}
-nav {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding-right: 2%;
 }
 
 img {
@@ -37,8 +110,8 @@ img {
 }
 
 .bio {
-  display: grid;
-  grid-template-columns: 100%;
+  /* display: grid; */
+  /* grid-template-columns: 100%; */
   /* grid-template-rows: 10% 90%; */
 }
 
@@ -46,7 +119,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 
 .experiences-container {
@@ -56,28 +129,29 @@ img {
   display:flex;
   align-items: center;
   justify-content: space-evenly;
-  /* justify-content: center;
-  gap: 500px; */
+  /* justify-content: center; */
+  /* gap: 500px; */
   width: 100%;
 }
 
 .description {
   font-size: 25px;
-  text-align: center;
+  text-align: left;
   padding-left: 75px;
   line-height: 35px;
+  color: white;
 }
 
 .skills_container {
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 24px;
-  width: 350px;
   min-height: 200px;
-  background-color: aquamarine;
+  min-width: 195px;
+  background-color: rgba(255, 255, 255, 0.777);
 }
 
 .skills_title {
-  background-color: rgb(94, 28, 102);
+  background-color: rgba(49, 49, 49, 0.392);
   height: 50px;
   padding: 0;
   margin: 0;
@@ -88,32 +162,199 @@ img {
   border-top-left-radius: 24px;
   border-top-right-radius:24px;
   font-weight: bolder;
+  font-size: 20px;
 
 }
 
 .skills_text {
-  color: pink;
+  color: rgb(0, 0, 0);
 }
+
 
 
 
 
 @media (max-width: 470px) {
   body {
-    background-color: rgb(189, 203, 207);
+      /* height: 100%;
+      width: 100%;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      background-color: rgba(0, 0, 0, 0.962);
+      background-image: url(mobile_galaxy.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-size: cover;
+      /* overflow: hidden; */
+      opacity: 0.8;
+      min-width: fit-content; */
+    }
+
   }
 
   img {
-    width: 250px;
+    width: 60%;
+    border: 10px;
+    border-radius: 15%;    
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
   }
 
   .description {
     font-size: medium;
-    line-height: 22px;
-  }
+    line-height: 32px;
+    font-size: 25px;
+    text-align: left;
+    color: white;
+    padding: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    }
 
   .bio-container {
     flex-direction: column;
     margin-right: 0px;
   }
-}
+
+  .experiences-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* .skills_container {
+    border: 1px solid black;
+    border-radius: 24px;
+    width: 350px;
+    min-height: 200px;
+    background-color: aquamarine;
+  } */
+
+  header {
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 100% 0%; */
+    width: 100%;
+    height: 60px;
+  }
+
+  .menu {
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+  }
+  
+  .fa.fa-phone.fa-2x {
+    margin: 0.45em 0.25em 0em 0em;
+    /* margin-top: 6px;
+    margin-right: 8px;   */
+    color: rgb(255, 255, 255);
+  }
+  
+  .open {
+    display: flex;
+    flex-wrap: wrap;
+    /* color: rgb(0, 0, 0); */
+    font-size: 38px;
+    margin: 0 0 1em 0.15em;
+    /* display: none; */
+    cursor: pointer;
+    text-align: left;
+    margin-bottom: 0px;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+  }
+  
+  /* This is an element within and element selector */
+  .nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    background: transparent;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: bolder;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+  }
+  
+  .nav {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* overflow-x: visible; */
+    height: 30vh;
+    width: fit-content;
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(70, 0, 78, 0.668);
+    transition: 0.5s;
+    /* display: block; */
+    font-size: 17px;
+    /* padding-left: 1em; */
+    padding-bottom: 3em;
+    padding-top: 0.5em;
+    transform: 0.3s;
+    clear: left;
+    overflow: hidden;
+    flex-direction: column;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End of media query */
+} 
