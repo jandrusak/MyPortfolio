@@ -124,6 +124,12 @@ header {
   z-index: 0;
   margin-top: 30px;
 }
+ 
+.headline {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
 
 h1 {
   padding-left: 45px;
@@ -159,6 +165,23 @@ h3 {
   font-size: 30px;
 }
 
+.animation {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+
+  color: rgb(242, 0, 255);
+  animation-name: change;
+  animation-duration: 6s;
+}
+
+@keyframes change {
+  from {color: rgb(225, 255, 0);}
+  to {color: rgb(255, 0, 255);}
+}
+
 .small-text {
   color: white;
   font-size: 10px;
@@ -181,9 +204,31 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px; ;
+  width: min(1250px, 80%);
+  border-radius: 2%;
+}
+
+.portfolio {
+  display: flex;
+  position: relative;
+  /* display: flex; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px; ;
   width: 90%;
   border-radius: 2%;
 }
+
+.webtitles {
+  color: white;
+}
+
+.project_description {
+  color: white;
+}
+
+
 
 /* button {
   grid-column: 2/3;
