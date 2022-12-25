@@ -173,8 +173,7 @@ h3 {
 
   color: rgb(242, 0, 255);
   animation-name: change;
-  animation-delay: 5s;
-  animation-duration: 8s;
+  animation-duration: 9s;
 }
 
 @keyframes change {
